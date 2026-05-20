@@ -1,4 +1,4 @@
-"""
+Stock_Scanner.py
 Stock Swing Scanner page.
 Scans selected universe and presents ranked setups with entry/SL/target.
 """
