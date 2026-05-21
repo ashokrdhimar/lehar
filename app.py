@@ -40,15 +40,19 @@ st.divider()
 # --- Market Overview ---
 st.subheader("Market Overview")
 
-cols = st.columns(len(INDICES))
-for i, (name, symbol) in enumerate(INDICES.items()):
-    with cols[i]:
-        q = get_quote(symbol)
-        if q is None:
-            st.metric(label=name, value="—", delta="No data")
-            continue
-        delta_str = f"{q['change']:+.2f} ({q['pct_change']:+.2f}%)"
-        st.metric(label=name, value=f"{q['price']:,.2f}", delta=delta_str)
+# Display in rows of 3 — prevents number truncation in narrow columns.
+items = list(INDICES.items())
+for row_start in range(0, len(items), 3):
+    row_items = items[row_start:row_start + 3]
+    cols = st.columns(3)  # always 3 columns; last row may have an empty slot
+    for i, (name, symbol) in enumerate(row_items):
+        with cols[i]:
+            q = get_quote(symbol)
+            if q is None:
+                st.metric(label=name, value="—", delta="No data")
+                continue
+            delta_str = f"{q['change']:+.2f} ({q['pct_change']:+.2f}%)"
+            st.metric(label=name, value=f"{q['price']:,.2f}", delta=delta_str)
 
 
 st.divider()
