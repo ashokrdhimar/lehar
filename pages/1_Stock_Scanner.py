@@ -95,43 +95,44 @@ if 'scan_results' in st.session_state and not st.session_state['scan_results'].e
 
     st.divider()
 
-    # Results table
+    # Results as clean cards (stock name prominent, readable on mobile)
     st.subheader(f"🎯 Top Setups ({st.session_state.get('scan_timeframe', 'Daily')})")
 
-    display_df = results.copy()
-    display_df['CMP'] = display_df['cmp'].apply(lambda x: f"₹{x:,.2f}")
-    display_df['Entry'] = display_df['entry'].apply(lambda x: f"₹{x:,.2f}")
-    display_df['SL'] = display_df['stop_loss'].apply(lambda x: f"₹{x:,.2f}")
-    display_df['T1'] = display_df['target1'].apply(lambda x: f"₹{x:,.2f}")
-    display_df['T2'] = display_df['target2'].apply(lambda x: f"₹{x:,.2f}")
-    display_df['R:R'] = display_df['rr_ratio'].apply(lambda x: f"1:{x}")
-    display_df['Score'] = display_df['score']
-    display_df['Direction'] = display_df['direction'].apply(
-        lambda x: f"🟢 {x}" if x == 'LONG' else f"🔴 {x}"
-    )
+    def hindi_hint(direction, score):
+        if direction == 'SHORT':
+            return "🔴 गिरावट का setup — short करें या दूर रहें"
+        if score >= 75:
+            return "🟢 मज़बूत मौका — खरीदने लायक"
+        if score >= 60:
+            return "🟢 अच्छा setup — confirmation पर खरीदें"
+        return "🟡 ठीक setup — नज़र रखें, जल्दबाज़ी न करें"
 
-    show_cols = ['symbol', 'Direction', 'setup', 'Score', 'CMP', 'Entry', 'SL', 'T1', 'T2', 'R:R',
-                 'rsi', 'adx', 'vol_ratio']
-    display_df = display_df[show_cols].rename(columns={
-        'symbol': 'Stock',
-        'setup': 'Setup',
-        'rsi': 'RSI',
-        'adx': 'ADX',
-        'vol_ratio': 'Vol×',
-    })
+    for _, row in results.iterrows():
+        dir_color = "#0b6e3f" if row['direction'] == 'LONG' else "#6e1b1b"
+        dir_emoji = "🟢" if row['direction'] == 'LONG' else "🔴"
+        st.markdown(f"""
+        <div style="border:1px solid rgba(255,255,255,0.1); border-left:5px solid {dir_color};
+                    border-radius:12px; padding:14px 18px; margin:8px 0; background:rgba(255,255,255,0.02);">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:1.25rem; font-weight:700;">{dir_emoji} {row['symbol']}</span>
+            <span style="font-size:0.95rem; color:#FFB700; font-weight:600;">{row['direction']} · Score {row['score']}/100</span>
+          </div>
+          <div style="color:#bbb; margin:4px 0 8px 0;">{row['setup']}</div>
+          <div style="font-size:0.95rem;">
+            Entry <b>₹{row['entry']:,.2f}</b> &nbsp;·&nbsp;
+            SL <b style="color:#ff6666;">₹{row['stop_loss']:,.2f}</b> &nbsp;·&nbsp;
+            T1 <b style="color:#66cc88;">₹{row['target1']:,.2f}</b> &nbsp;·&nbsp;
+            T2 <b style="color:#66cc88;">₹{row['target2']:,.2f}</b>
+          </div>
+          <div style="font-size:0.85rem; color:#999; margin-top:4px;">
+            R:R 1:{row['rr_ratio']} &nbsp;·&nbsp; RSI {row['rsi']} &nbsp;·&nbsp; ADX {row['adx']} &nbsp;·&nbsp; Vol {row['vol_ratio']}×
+          </div>
+          <div style="margin-top:8px; font-size:0.92rem;">{hindi_hint(row['direction'], row['score'])}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
-    st.dataframe(
-        display_df,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Score": st.column_config.ProgressColumn(
-                "Score", min_value=0, max_value=100, format="%d",
-            ),
-        },
-    )
-
-    st.caption("💡 Sorted by Score (strength). Higher score = stronger confluence of trend, momentum, and volume.")
+    st.caption("💡 Score जितना ज़्यादा, setup उतना मज़बूत। पूरे technical + fundamental + news analysis के लिए "
+               "**Stock Analysis** page पर stock का नाम डालें।")
 
     # --- Drill down into one stock ---
     st.divider()
