@@ -223,6 +223,7 @@ def main():
 
     # 2. Scan universe
     symbols = get_universe("Nifty 100")
+    symbols = list(dict.fromkeys(symbols))   # dedupe, preserve order
     print(f"Fetching {len(symbols)} stocks...")
     all_data = fetch_all(symbols)
     print(f"Got {len(all_data)} stocks. Analyzing...")
@@ -255,9 +256,18 @@ def main():
         if sig:
             setups.append((sym, df, sig))
 
-    # 3. Build setup cards (sorted by score, top 12), enrich top ones
+    # 3. Select best setups: dedupe by symbol (keep highest score), quality filter
     setups.sort(key=lambda x: x[2]["score"], reverse=True)
-    setups = setups[:12]
+    seen, unique = set(), []
+    for sym, df, sig in setups:
+        key = sym.replace(".NS", "")
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append((sym, df, sig))
+    # Prefer strong setups (score >= 55); if too few, show top 8 so list is never empty
+    strong = [s for s in unique if s[2]["score"] >= 55]
+    setups = strong[:10] if len(strong) >= 4 else unique[:8]
 
     setup_cards = []
     for sym, df, sig in setups:
