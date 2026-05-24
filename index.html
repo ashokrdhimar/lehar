@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lehar — Trading Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0A0D14;--card:#141A28;--card2:#19202F;--line:rgba(255,255,255,.07);
+    --gold:#F5B841;--green:#1FD98C;--red:#FF5C6C;--blue:#2DB6FF;
+    --txt:#F3F5FA;--txt2:#8B93A7;--txt3:#5C6478;}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{background:var(--bg);color:var(--txt);font-family:'Sora',sans-serif;
+    max-width:440px;margin:0 auto;padding-bottom:50px;overflow-x:hidden}
+  .hindi{font-family:'Mukta','Sora',sans-serif}
+  body::before{content:'';position:fixed;top:-140px;left:50%;transform:translateX(-50%);
+    width:440px;height:440px;border-radius:50%;
+    background:radial-gradient(circle,rgba(45,182,255,.10),transparent 70%);pointer-events:none;z-index:0}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;
+    position:sticky;top:0;z-index:20;background:rgba(10,13,20,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:19px;letter-spacing:.5px}
+  .wave{width:28px;height:28px;display:grid;place-items:center;background:linear-gradient(135deg,#2DB6FF,#1F7FFF);border-radius:9px;font-size:16px}
+  .updated{font-size:11px;color:var(--txt2);text-align:right;line-height:1.4}
+  .updated b{color:var(--green);font-weight:600}
+  .wrap{padding:20px;position:relative;z-index:1}
+  .reveal{opacity:0;transform:translateY(14px);animation:rise .55s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .greet{font-size:15px;color:var(--txt2)}.greet b{color:var(--txt);font-weight:600}
+  .greet-sub{font-size:13px;color:var(--txt3);margin-top:3px}
+  .sec-head{display:flex;align-items:center;gap:8px;margin:26px 0 13px;font-size:13px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.7px}
+  .sec-head .line{flex:1;height:1px;background:var(--line)}
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px}
+  .breadth{display:flex;height:9px;border-radius:5px;overflow:hidden;margin:12px 0 10px}
+  .breadth i{height:100%}.bl{background:var(--green)}.bn{background:var(--txt3)}.br{background:var(--red)}
+  .breadth-lbl{display:flex;justify-content:space-between;font-size:12px;color:var(--txt2)}
+  .summary-txt{font-size:14px;line-height:1.65;margin-top:11px;color:#E8ECF3}.summary-txt b{color:var(--gold);font-weight:600}
+  .pulse{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px 15px}
+  .pcard .nm{font-size:12px;color:var(--txt2);font-weight:500}
+  .pcard .pv{font-size:20px;font-weight:700;margin-top:4px;letter-spacing:-.3px}
+  .pcard .ch{font-size:12.5px;font-weight:600;margin-top:3px}
+  .up{color:var(--green)}.down{color:var(--red)}
+  .regime{border-radius:18px;padding:18px;border:1px solid var(--line)}
+  .rg-fav{background:linear-gradient(140deg,#0E5C3C,#0B2A20);border-color:rgba(31,217,140,.25)}
+  .rg-cau{background:linear-gradient(140deg,#5C4A0E,#2A220B);border-color:rgba(245,184,65,.25)}
+  .rg-avo{background:linear-gradient(140deg,#5C1B1B,#2A0F0F);border-color:rgba(255,92,108,.25)}
+  .rg-top{display:flex;justify-content:space-between;align-items:center}
+  .rg-verdict{font-size:20px;font-weight:800;display:flex;align-items:center;gap:8px}
+  .rg-idx{font-size:12px;color:rgba(255,255,255,.6);font-weight:600}
+  .rg-reason{font-size:14px;line-height:1.65;margin-top:10px;color:#E8F1EC}
+  .rg-strikes{display:flex;gap:10px;margin-top:14px}
+  .strike{flex:1;background:rgba(0,0,0,.22);border-radius:12px;padding:10px 12px;text-align:center}
+  .strike .l{font-size:11px;color:rgba(255,255,255,.55)}.strike .v{font-size:16px;font-weight:700;margin-top:3px}
+  .sectors{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-size:12.5px;font-weight:500;padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:var(--card)}
+  .chip .a{font-weight:700;margin-left:4px}
+  .opp{background:var(--card);border:1px solid var(--line);border-radius:17px;margin-bottom:12px;border-left:4px solid var(--green);overflow:hidden;transition:.2s}
+  .opp.short{border-left-color:var(--red)}
+  .opp-head{padding:16px 17px;cursor:pointer}
+  .opp-top{display:flex;justify-content:space-between;align-items:flex-start}
+  .opp-sym{font-size:19px;font-weight:700;display:flex;align-items:center;gap:8px}
+  .opp-sec{font-size:11px;color:var(--txt3);font-weight:400}
+  .opp-rating{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;white-space:nowrap}
+  .r-strong{background:rgba(31,217,140,.16);color:var(--green)}.r-buy{background:rgba(31,217,140,.12);color:var(--green)}
+  .r-watch{background:rgba(245,184,65,.14);color:var(--gold)}.r-short{background:rgba(255,92,108,.14);color:var(--red)}
+  .opp-setup{font-size:13px;color:var(--txt2);margin-top:5px}
+  .opp-score{display:flex;align-items:center;gap:8px;margin-top:11px}
+  .opp-bar{flex:1;height:6px;background:var(--card2);border-radius:4px;overflow:hidden}
+  .opp-bar i{display:block;height:100%;background:linear-gradient(90deg,#1FD98C,#7BFFB0);border-radius:4px}
+  .opp-bar.s i{background:linear-gradient(90deg,#FF5C6C,#FF9AA5)}
+  .opp-scnum{font-size:13px;font-weight:600;color:var(--txt2)}
+  .opp-cmp{font-size:13px;color:var(--txt2);margin-top:9px;display:flex;justify-content:space-between;align-items:center}
+  .expand-hint{font-size:11px;color:var(--gold)}
+  .detail{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .opp.open .detail{max-height:1600px}
+  .detail-in{padding:0 17px 17px;border-top:1px solid var(--line);margin-top:4px;padding-top:15px}
+  .spark{margin:4px 0 14px}
+  .dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:6px}
+  .dg{background:var(--card2);border-radius:10px;padding:9px 8px;text-align:center}
+  .dg .l{font-size:10px;color:var(--txt3);text-transform:uppercase}.dg .v{font-size:14px;font-weight:700;margin-top:3px}
+  .dlevels{display:flex;gap:6px;margin:12px 0}
+  .ol{flex:1;background:var(--card2);border-radius:10px;padding:9px 6px;text-align:center}
+  .ol .l{font-size:10px;color:var(--txt3);text-transform:uppercase}.ol .v{font-size:14px;font-weight:700;margin-top:3px}
+  .ol.sl .v{color:var(--red)}.ol.t1 .v,.ol.t2 .v{color:var(--green)}
+  .sr{display:flex;gap:8px;font-size:12px;margin-top:4px}
+  .sr div{flex:1;padding:8px 10px;border-radius:9px}
+  .sr .sup{background:rgba(31,217,140,.1);color:var(--green)}.sr .res{background:rgba(255,92,108,.1);color:var(--red)}
+  .why{margin-top:14px}
+  .why-row{display:flex;gap:9px;margin-bottom:11px}
+  .why-ic{font-size:15px;flex-shrink:0;margin-top:1px}
+  .why-tx{font-size:13.5px;line-height:1.6}.why-tx b{color:var(--gold);font-weight:600}
+  .why-tx .h{font-weight:600;color:var(--txt);display:block;margin-bottom:2px}
+  .empty{text-align:center;color:var(--txt3);padding:30px 20px;font-size:14px;line-height:1.7}
+  .foot{text-align:center;color:var(--txt3);font-size:11.5px;margin-top:30px;line-height:1.7}
+  .demo-pill{display:inline-block;background:rgba(245,184,65,.13);color:var(--gold);font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="wave">🌊</span> Lehar</div>
+  <div class="updated">Updated<br><b id="upd">—</b></div>
+</div>
+<div class="wrap">
+  <div style="text-align:center"><span class="demo-pill" id="demo">DEMO — sample data</span></div>
+  <div class="reveal" style="animation-delay:.04s">
+    <div class="greet hindi"><b id="greet">नमस्ते Ashok ji</b></div>
+    <div class="greet-sub hindi" id="greetsub">आज के market का हाल देखिए।</div>
+  </div>
+  <div class="reveal" style="animation-delay:.09s">
+    <div class="sec-head hindi">🧭 आज का बाज़ार — एक नज़र <span class="line"></span></div>
+    <div id="summary"></div>
+  </div>
+  <div class="reveal" style="animation-delay:.14s">
+    <div class="sec-head">📊 Market Pulse <span class="line"></span></div>
+    <div class="pulse" id="pulse"></div>
+  </div>
+  <div class="reveal" style="animation-delay:.18s">
+    <div class="sec-head hindi">🔥 कौनसे sector मज़बूत <span class="line"></span></div>
+    <div class="sectors" id="sectors"></div>
+  </div>
+  <div class="reveal" style="animation-delay:.22s">
+    <div class="sec-head hindi">🎯 Option Selling — आज का माहौल <span class="line"></span></div>
+    <div id="regime"></div>
+  </div>
+  <div class="reveal" style="animation-delay:.26s">
+    <div class="sec-head hindi">📈 आज के Swing मौके — tap करके पूरी detail <span class="line"></span></div>
+    <div id="opps"></div>
+  </div>
+  <div class="foot hindi">🌊 Lehar · हर 15 मिनट अपने आप ताज़ा (market hours में)<br>
+    Educational tool — कोई buy/sell advice नहीं। अपनी समझ और risk से trade करें।</div>
+</div>
+<script>
+const SAMPLE={updated_at:"22 May 2026, 3:30 PM",is_demo:true,
+  market:{"NIFTY 50":{price:23719.30,change:64.60,pct:0.27},"BANK NIFTY":{price:53284.15,change:153.05,pct:0.29},"SENSEX":{price:78021.40,change:117.54,pct:0.15},"INDIA VIX":{price:17.82,change:-0.24,pct:-1.33}},
+  breadth:{bullish:34,neutral:11,bearish:5,summary_hi:"बाज़ार आज <b>तेज़ी (bullish)</b> की तरफ़ है — 50 में से 34 stocks में खरीदारी का रुझान। Banking और Auto मज़बूत। कुल माहौल खरीदारी के पक्ष में, पर VIX थोड़ा ऊँचा है तो SL ज़रूर रखें।"},
+  sectors:[{name:"Banking",strength:"strong"},{name:"Auto",strength:"strong"},{name:"IT",strength:"neutral"},{name:"Pharma",strength:"weak"},{name:"FMCG",strength:"neutral"},{name:"Metal",strength:"strong"}],
+  regime:{index:"Nifty 50",verdict:"FAVORABLE",regime:"Range",adx:16.8,reason_hi:"Range-bound market (ADX 16.8), कम volatility — option selling के लिए अच्छा माहौल।",ce_strike:24200,pe_strike:23200,expected:"22,893 – 24,545"},
+  setups:[
+   {symbol:"HDFCBANK",sector:"Banking",direction:"LONG",rating:"STRONG_BUY",setup:"Bullish Pullback to EMA20",score:84,cmp:1650,entry:1650,sl:1620,t1:1720,t2:1780,rr:1.8,rsi:58,adx:31,vol:1.8,pe:19.2,roe:17,mcap:"12.5L Cr",support:[1620,1595],resistance:[1700,1745],spark:[1580,1592,1585,1600,1615,1608,1625,1640,1632,1650],
+    why_hi:"Stock मज़बूत uptrend में है (EMA20 > EMA50)। अभी support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 31 बताता है trend दमदार है, RSI 58 healthy। Volume average से 1.8× ज़्यादा — खरीदारों का दम।",
+    watch_hi:"₹1,620 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,700 resistance, वहाँ रुक सकता है।",
+    exit_hi:"T1 ₹1,720 पर आधा profit book, बाकी T2 ₹1,780 के लिए। SL trailing करते रहें।"},
+   {symbol:"TATAMOTORS",sector:"Auto",direction:"LONG",rating:"BUY",setup:"Bullish Breakout (Volume)",score:72,cmp:982,entry:982,sl:958,t1:1030,t2:1065,rr:1.9,rsi:62,adx:26,vol:2.3,pe:11.8,roe:21,mcap:"3.6L Cr",support:[958,940],resistance:[1030,1060],spark:[920,915,930,945,938,955,948,965,972,982],
+    why_hi:"20-दिन high के ऊपर breakout, volume 2.3× — असली खरीदारी। PE सिर्फ़ 11.8 (सस्ता), ROE 21% (बढ़िया)। Auto sector मज़बूत।",
+    watch_hi:"Breakout के बाद कभी वापस test होता है — ₹982 पर फिर आए और टिके तो अच्छा। ₹958 नीचे गया तो breakout fail।",
+    exit_hi:"T1 ₹1,030 पर part profit, SL ₹958। Debt थोड़ा ज़्यादा है तो position छोटी।"},
+   {symbol:"INFY",sector:"IT",direction:"LONG",rating:"WATCH",setup:"EMA 20/50 Bullish Cross",score:58,cmp:1545,entry:1545,sl:1518,t1:1590,t2:1625,rr:1.6,rsi:53,adx:18,vol:1.1,pe:24.5,roe:31,mcap:"6.4L Cr",support:[1518,1495],resistance:[1590,1620],spark:[1505,1500,1512,1508,1520,1515,1528,1535,1540,1545],
+    why_hi:"EMA20 ने EMA50 को ऊपर cross किया — trend बदलने का early संकेत। पर ADX सिर्फ़ 18 (trend कमज़ोर), volume normal। Fundamentals बढ़िया (ROE 31%, debt शून्य) पर technical confirmation पक्का नहीं।",
+    watch_hi:"₹1,545 के ऊपर 1-2 दिन टिके और ADX बढ़े तो setup मज़बूत। तब तक watchlist में।",
+    exit_hi:"अभी जल्दबाज़ी न करें। Confirmation पर ही छोटी entry, SL ₹1,518।"},
+   {symbol:"INDUSINDBK",sector:"Banking",direction:"SHORT",rating:"SHORT_SETUP",setup:"Bearish Breakdown (Volume)",score:69,cmp:1402,entry:1402,sl:1432,t1:1350,t2:1310,rr:1.7,rsi:38,adx:27,vol:1.9,pe:9.5,roe:14,mcap:"1.1L Cr",support:[1350,1310],resistance:[1432,1465],spark:[1465,1458,1448,1452,1438,1442,1425,1418,1408,1402],
+    why_hi:"20-दिन low के नीचे breakdown, volume 1.9× — बिकवाली का दबाव। ADX 27 trend मज़बूत (नीचे)। RSI 38 कमज़ोरी।",
+    watch_hi:"यह <b>गिरावट</b> का setup है। short करें तो SL ₹1,432 (ऊपर गया तो निकलें)।",
+    exit_hi:"short नहीं करते तो इसे <b>खरीदने की गलती न करें</b> — अभी दूर रहें।"}
+  ]};
+function fmt0(n){return Number(n).toLocaleString('en-IN')}
+function sparkSVG(data){const W=400,H=46,mn=Math.min(...data),mx=Math.max(...data),rng=(mx-mn)||1;
+  const x=i=>i/(data.length-1)*W,y=v=>H-((v-mn)/rng)*(H-8)-4;let d=`M ${x(0)} ${y(data[0])}`;
+  for(let i=1;i<data.length;i++)d+=` L ${x(i)} ${y(data[i])}`;
+  const up=data[data.length-1]>=data[0],col=up?'#1FD98C':'#FF5C6C',id='sg'+Math.round(data[0]);
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="46" preserveAspectRatio="none">
+    <defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${col}" stop-opacity=".25"/><stop offset="100%" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
+    <path d="${d} L ${W} ${H} L 0 ${H} Z" fill="url(#${id})"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linecap="round"/></svg>`;}
+function render(d){
+  document.getElementById('upd').textContent=d.updated_at||"—";
+  document.getElementById('demo').style.display=d.is_demo?'inline-block':'none';
+  const h=new Date().getHours();let g,s;
+  if(h<11){g="सुप्रभात Ashok ji ☀️";s="आज का trading plan बनाएँ — रात भर के cues और setups देखें।";}
+  else if(h<15){g="नमस्ते Ashok ji";s="दोपहर का update — market कैसा चल रहा है देखें।";}
+  else{g="शुभ संध्या Ashok ji 🌆";s="आज का बंद भाव — कल के swing trades की तैयारी करें।";}
+  document.getElementById('greet').textContent=g;document.getElementById('greetsub').textContent=s;
+  const b=d.breadth,tot=b.bullish+b.neutral+b.bearish;
+  document.getElementById('summary').innerHTML=`<div class="summary"><div class="breadth"><i class="bl" style="width:${b.bullish/tot*100}%"></i><i class="bn" style="width:${b.neutral/tot*100}%"></i><i class="br" style="width:${b.bearish/tot*100}%"></i></div><div class="breadth-lbl"><span style="color:var(--green)">🟢 ${b.bullish} bullish</span><span>⚪ ${b.neutral}</span><span style="color:var(--red)">🔴 ${b.bearish} bearish</span></div><div class="summary-txt hindi">${b.summary_hi}</div></div>`;
+  document.getElementById('pulse').innerHTML=Object.entries(d.market).map(([k,v])=>{const up=v.change>=0,cls=up?'up':'down',ar=up?'▲':'▼';return `<div class="pcard"><div class="nm">${k}</div><div class="pv">${k==='INDIA VIX'?v.price.toFixed(2):fmt0(Math.round(v.price))}</div><div class="ch ${cls}">${ar} ${up?'+':''}${v.change.toFixed(2)} (${up?'+':''}${v.pct.toFixed(2)}%)</div></div>`;}).join('');
+  const scol={strong:['🟢','color:var(--green)'],neutral:['⚪','color:var(--txt2)'],weak:['🔴','color:var(--red)']};
+  document.getElementById('sectors').innerHTML=d.sectors.map(s=>{const[ic,st]=scol[s.strength];return `<span class="chip">${s.name}<span class="a" style="${st}">${ic}</span></span>`;}).join('');
+  const r=d.regime,rgcls={FAVORABLE:'rg-fav',CAUTION:'rg-cau',AVOID:'rg-avo'}[r.verdict]||'rg-fav',rgem={FAVORABLE:'🟢',CAUTION:'🟡',AVOID:'🔴'}[r.verdict]||'🟢';
+  document.getElementById('regime').innerHTML=`<div class="regime ${rgcls}"><div class="rg-top"><div class="rg-verdict">${rgem} ${r.verdict}</div><div class="rg-idx">${r.index} · ADX ${r.adx}</div></div><div class="rg-reason hindi">${r.reason_hi}</div><div class="rg-strikes"><div class="strike"><div class="l">Sell CE</div><div class="v">${fmt0(r.ce_strike)}</div></div><div class="strike"><div class="l">Sell PE</div><div class="v">${fmt0(r.pe_strike)}</div></div><div class="strike"><div class="l">Range</div><div class="v" style="font-size:12px">${r.expected}</div></div></div></div>`;
+  const rmap={STRONG_BUY:['r-strong','🟢🟢 मज़बूत'],BUY:['r-buy','🟢 Buy'],WATCH:['r-watch','🟡 Watch'],SHORT_SETUP:['r-short','🔴 Short']};
+  const opps=document.getElementById('opps');
+  if(!d.setups||!d.setups.length){opps.innerHTML=`<div class="empty hindi">अभी कोई strong setup नहीं मिला।<br>अगले update पर फिर देखें।</div>`;return;}
+  opps.innerHTML=d.setups.map((o,i)=>{const isS=o.direction==='SHORT',[rc,rt]=rmap[o.rating]||['r-watch','Watch'];
+    return `<div class="opp ${isS?'short':''}" id="opp${i}"><div class="opp-head" onclick="document.getElementById('opp${i}').classList.toggle('open')"><div class="opp-top"><div><div class="opp-sym">${o.symbol} <span class="opp-sec">${o.sector}</span></div><div class="opp-setup">${o.setup}</div></div><div class="opp-rating ${rc}">${rt}</div></div><div class="opp-score"><div class="opp-bar ${isS?'s':''}"><i style="width:${o.score}%"></i></div><div class="opp-scnum">${o.score}/100</div></div><div class="opp-cmp"><span>CMP ₹${fmt0(o.cmp)}</span><span class="expand-hint">tap for detail ▾</span></div></div>
+    <div class="detail"><div class="detail-in"><div class="spark">${sparkSVG(o.spark)}</div>
+    <div class="dgrid"><div class="dg"><div class="l">RSI</div><div class="v">${o.rsi}</div></div><div class="dg"><div class="l">ADX</div><div class="v">${o.adx}</div></div><div class="dg"><div class="l">Volume</div><div class="v">${o.vol}×</div></div><div class="dg"><div class="l">PE</div><div class="v">${o.pe}</div></div><div class="dg"><div class="l">ROE</div><div class="v">${o.roe}%</div></div><div class="dg"><div class="l">Mkt Cap</div><div class="v" style="font-size:12px">${o.mcap}</div></div></div>
+    <div class="dlevels"><div class="ol"><div class="l">Entry</div><div class="v">${fmt0(o.entry)}</div></div><div class="ol sl"><div class="l">SL</div><div class="v">${fmt0(o.sl)}</div></div><div class="ol t1"><div class="l">T1</div><div class="v">${fmt0(o.t1)}</div></div><div class="ol t2"><div class="l">T2</div><div class="v">${fmt0(o.t2)}</div></div></div>
+    <div class="sr"><div class="sup">Support: ₹${o.support.join(', ₹')}</div><div class="res">Resistance: ₹${o.resistance.join(', ₹')}</div></div>
+    <div class="why"><div class="why-row"><span class="why-ic">🔍</span><div class="why-tx hindi"><span class="h">क्यों यह मौका</span>${o.why_hi}</div></div><div class="why-row"><span class="why-ic">⚠️</span><div class="why-tx hindi"><span class="h">किन बातों का ध्यान रखें</span>${o.watch_hi}</div></div><div class="why-row"><span class="why-ic">🎯</span><div class="why-tx hindi"><span class="h">कैसे निकलें (exit plan)</span>${o.exit_hi}</div></div></div>
+    </div></div></div>`;}).join('');
+}
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>render(d)).catch(()=>render(SAMPLE));
+</script>
+</body>
+</html>
