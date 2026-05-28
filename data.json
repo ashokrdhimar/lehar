@@ -1,5 +1,5 @@
 {
-  "updated_at": "27 May 2026, 7:34 PM",
+  "updated_at": "28 May 2026, 11:44 AM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -20,7 +20,7 @@
     "INDIA VIX": {
       "price": 14.98,
       "change": -1.15,
-      "pct": -7.11
+      "pct": -7.13
     }
   },
   "breadth": {
@@ -90,7 +90,7 @@
       "rsi": 42.2,
       "adx": 20.6,
       "vol": 2.23,
-      "pe": 53.2,
+      "pe": 54.0,
       "roe": 32,
       "mcap": "1.6L Cr",
       "support": [
@@ -223,7 +223,7 @@
       "rsi": 56.8,
       "adx": 29.1,
       "vol": 0.6,
-      "pe": 77.4,
+      "pe": 77.5,
       "roe": 7,
       "mcap": "1.2L Cr",
       "support": [
@@ -267,7 +267,7 @@
       "rsi": 76.4,
       "adx": 34.2,
       "vol": 1.89,
-      "pe": 37.5,
+      "pe": 37.7,
       "roe": 21,
       "mcap": "4.8L Cr",
       "support": [
@@ -311,7 +311,7 @@
       "rsi": 73.8,
       "adx": 38.0,
       "vol": 1.82,
-      "pe": 168.3,
+      "pe": 168.9,
       "roe": 21,
       "mcap": "1.7L Cr",
       "support": [
@@ -355,7 +355,7 @@
       "rsi": 43.6,
       "adx": 22.8,
       "vol": 0.58,
-      "pe": 15.1,
+      "pe": 15.2,
       "roe": 31,
       "mcap": "4.7L Cr",
       "support": [
@@ -402,7 +402,7 @@
       "vol": 0.61,
       "pe": 41.8,
       "roe": 16,
-      "mcap": "79,009 Cr",
+      "mcap": "79,027 Cr",
       "support": [
         440,
         403
@@ -444,7 +444,7 @@
       "rr": 1.33,
       "rsi": 53.6,
       "adx": 13.6,
-      "vol": 7.61,
+      "vol": 7.74,
       "pe": 9.2,
       "roe": 28,
       "mcap": "2.9L Cr",
@@ -470,7 +470,7 @@
         458.15,
         463.05
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 13.6 (trend अभी कमज़ोर है), RSI 53.6 healthy। Volume average से 7.61× ज़्यादा — खरीदारों का दम।",
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 13.6 (trend अभी कमज़ोर है), RSI 53.6 healthy। Volume average से 7.74× ज़्यादा — खरीदारों का दम।",
       "watch_hi": "₹443 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹476 resistance है, वहाँ रुक सकता है।",
       "exit_hi": "T1 ₹490 पर आधा profit book करें, बाकी T2 ₹510 के लिए रखें। SL ₹443 trailing करते रहें।"
     },
