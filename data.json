@@ -1,5 +1,5 @@
 {
-  "updated_at": "05 Jun 2026, 4:02 PM",
+  "updated_at": "05 Jun 2026, 7:13 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -19,8 +19,8 @@
     },
     "INDIA VIX": {
       "price": 15.79,
-      "change": -0.49,
-      "pct": -3.03
+      "change": -0.1,
+      "pct": -0.65
     }
   },
   "breadth": {
