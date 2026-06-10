@@ -1,26 +1,26 @@
 {
-  "updated_at": "10 Jun 2026, 4:11 PM",
+  "updated_at": "10 Jun 2026, 7:32 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
       "price": 23214.95,
-      "change": 91.95,
-      "pct": 0.4
+      "change": -27.15,
+      "pct": -0.12
     },
     "BANK NIFTY": {
       "price": 55100.3,
-      "change": 1036.55,
-      "pct": 1.92
+      "change": -94.2,
+      "pct": -0.17
     },
     "SENSEX": {
       "price": 73983.18,
-      "change": 458.92,
-      "pct": 0.62
+      "change": 64.42,
+      "pct": 0.09
     },
     "INDIA VIX": {
       "price": 15.63,
-      "change": -1.4,
-      "pct": -8.21
+      "change": 0.05,
+      "pct": 0.34
     }
   },
   "breadth": {
@@ -67,11 +67,11 @@
     "index": "Nifty 50",
     "verdict": "CAUTION",
     "regime": "Trend Down",
-    "adx": 22.3,
-    "reason_hi": "Moderate trend (ADX 22.3). Sell strikes well away from price, on opposite side of trend if possible.",
-    "ce_strike": 24050,
-    "pe_strike": 22000,
-    "expected": "22,413 – 24,017"
+    "adx": 23.2,
+    "reason_hi": "Moderate trend (ADX 23.2). Sell strikes well away from price, on opposite side of trend if possible.",
+    "ce_strike": 24000,
+    "pe_strike": 22050,
+    "expected": "22,447 – 23,983"
   },
   "setups": [
     {
