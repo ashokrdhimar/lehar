@@ -1,5 +1,5 @@
 {
-  "updated_at": "08 Jul 2026, 3:49 PM",
+  "updated_at": "08 Jul 2026, 5:34 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -178,7 +178,7 @@
       "rsi": 41.3,
       "adx": 22.4,
       "vol": 0.92,
-      "pe": 69.7,
+      "pe": 70.2,
       "roe": 7,
       "mcap": "1.1L Cr",
       "support": [
@@ -222,7 +222,7 @@
       "rsi": 77.9,
       "adx": 21.3,
       "vol": 3.75,
-      "pe": 46.6,
+      "pe": 52.7,
       "roe": 5,
       "mcap": "76,368 Cr",
       "support": [
