@@ -1,32 +1,32 @@
 {
-  "updated_at": "21 Jul 2026, 10:52 AM",
+  "updated_at": "21 Jul 2026, 1:24 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
-      "price": 24166.45,
-      "change": -72.05,
+      "price": 24165.4,
+      "change": -73.1,
       "pct": -0.3
     },
     "BANK NIFTY": {
-      "price": 57893.35,
-      "change": -51.65,
-      "pct": -0.09
+      "price": 57920.15,
+      "change": -24.85,
+      "pct": -0.04
     },
     "SENSEX": {
-      "price": 77504.7,
-      "change": -203.82,
-      "pct": -0.26
+      "price": 77360.2,
+      "change": -348.32,
+      "pct": -0.45
     },
     "INDIA VIX": {
-      "price": 12.87,
-      "change": -0.11,
-      "pct": -0.85
+      "price": 12.71,
+      "change": -0.27,
+      "pct": -2.08
     }
   },
   "breadth": {
     "bullish": 46,
-    "neutral": 19,
-    "bearish": 32,
+    "neutral": 20,
+    "bearish": 31,
     "summary_hi": "बाज़ार आज <b>मिला-जुला (neutral)</b> है — 97 में से 46 stocks में खरीदारी का रुझान। साफ़ दिशा नहीं — चुनिंदा strong setups पर ही दांव लगाएँ।"
   },
   "sectors": [
@@ -71,69 +71,25 @@
     "reason_hi": "Range-bound market (ADX 9.8), low volatility. Good environment for selling.",
     "ce_strike": 24800,
     "pe_strike": 23500,
-    "expected": "23,543 – 24,789"
+    "expected": "23,537 – 24,794"
   },
   "setups": [
-    {
-      "symbol": "MARICO",
-      "sector": "FMCG",
-      "direction": "LONG",
-      "rating": "BUY",
-      "setup": "Bullish Pullback to EMA20",
-      "score": 70,
-      "cmp": 849,
-      "entry": 849,
-      "sl": 826,
-      "t1": 880,
-      "t2": 904,
-      "rr": 1.33,
-      "rsi": 57.0,
-      "adx": 41.0,
-      "vol": 0.09,
-      "pe": 62.5,
-      "roe": 41,
-      "mcap": "1.1L Cr",
-      "support": [
-        796,
-        795
-      ],
-      "resistance": [
-        873
-      ],
-      "spark": [
-        838.55,
-        838.1,
-        847.65,
-        840.1,
-        860.05,
-        852.5,
-        846.75,
-        848.25,
-        844.45,
-        839.35,
-        844.0,
-        849.05
-      ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 41.0 (trend दमदार है), RSI 57.0 healthy। Volume सामान्य है।",
-      "watch_hi": "₹826 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹873 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹880 पर आधा profit book करें, बाकी T2 ₹904 के लिए रखें। SL ₹826 trailing करते रहें।"
-    },
     {
       "symbol": "PIDILITIND",
       "sector": "Chemicals",
       "direction": "LONG",
-      "rating": "BUY",
+      "rating": "STRONG_BUY",
       "setup": "Bullish Pullback to EMA20",
-      "score": 70,
+      "score": 78,
       "cmp": 1577,
       "entry": 1577,
-      "sl": 1534,
+      "sl": 1533,
       "t1": 1635,
       "t2": 1678,
       "rr": 1.33,
-      "rsi": 53.6,
+      "rsi": 53.5,
       "adx": 28.6,
-      "vol": 0.39,
+      "vol": 1.0,
       "pe": 65.8,
       "roe": 24,
       "mcap": "1.6L Cr",
@@ -157,11 +113,100 @@
         1559.6,
         1566.1,
         1565.8,
-        1577.1
+        1576.8
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 28.6 (trend दमदार है), RSI 53.6 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,534 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,621 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,635 पर आधा profit book करें, बाकी T2 ₹1,678 के लिए रखें। SL ₹1,534 trailing करते रहें।"
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 28.6 (trend दमदार है), RSI 53.5 healthy। Volume सामान्य है।",
+      "watch_hi": "₹1,533 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,621 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹1,635 पर आधा profit book करें, बाकी T2 ₹1,678 के लिए रखें। SL ₹1,533 trailing करते रहें।"
+    },
+    {
+      "symbol": "MARICO",
+      "sector": "FMCG",
+      "direction": "LONG",
+      "rating": "BUY",
+      "setup": "Bullish Pullback to EMA20",
+      "score": 70,
+      "cmp": 848,
+      "entry": 848,
+      "sl": 824,
+      "t1": 879,
+      "t2": 903,
+      "rr": 1.33,
+      "rsi": 56.4,
+      "adx": 41.0,
+      "vol": 0.22,
+      "pe": 62.4,
+      "roe": 41,
+      "mcap": "1.1L Cr",
+      "support": [
+        796,
+        795
+      ],
+      "resistance": [
+        849,
+        873
+      ],
+      "spark": [
+        838.55,
+        838.1,
+        847.65,
+        840.1,
+        860.05,
+        852.5,
+        846.75,
+        848.25,
+        844.45,
+        839.35,
+        844.0,
+        847.75
+      ],
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 41.0 (trend दमदार है), RSI 56.4 healthy। Volume सामान्य है।",
+      "watch_hi": "₹824 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹849 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹879 पर आधा profit book करें, बाकी T2 ₹903 के लिए रखें। SL ₹824 trailing करते रहें।"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "sector": "FMCG",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 67,
+      "cmp": 1084,
+      "entry": 1084,
+      "sl": 1117,
+      "t1": 1040,
+      "t2": 1007,
+      "rr": 1.33,
+      "rsi": 41.1,
+      "adx": 23.7,
+      "vol": 0.33,
+      "pe": 69.4,
+      "roe": 7,
+      "mcap": "1.1L Cr",
+      "support": [
+        1065
+      ],
+      "resistance": [
+        1130,
+        1136
+      ],
+      "spark": [
+        1117.9,
+        1125.0,
+        1089.8,
+        1106.7,
+        1111.9,
+        1098.6,
+        1097.6,
+        1085.5,
+        1088.5,
+        1088.6,
+        1091.9,
+        1083.9
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 23.7 (trend ठीक-ठाक है नीचे की तरफ़), RSI 41.1 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,117 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
       "symbol": "BAJAJFINSV",
@@ -170,16 +215,16 @@
       "rating": "BUY",
       "setup": "Bullish Pullback to EMA20",
       "score": 62,
-      "cmp": 1889,
-      "entry": 1889,
-      "sl": 1828,
-      "t1": 1971,
-      "t2": 2032,
+      "cmp": 1882,
+      "entry": 1882,
+      "sl": 1821,
+      "t1": 1963,
+      "t2": 2024,
       "rr": 1.33,
-      "rsi": 60.2,
+      "rsi": 59.1,
       "adx": 22.6,
-      "vol": 0.41,
-      "pe": 30.9,
+      "vol": 0.75,
+      "pe": 30.7,
       "roe": 15,
       "mcap": "3.0L Cr",
       "support": [
@@ -201,11 +246,11 @@
         1838.6,
         1854.0,
         1861.5,
-        1889.3
+        1881.5
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 22.6 (trend ठीक-ठाक है), RSI 60.2 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,828 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,920 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,971 पर आधा profit book करें, बाकी T2 ₹2,032 के लिए रखें। SL ₹1,828 trailing करते रहें।"
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 22.6 (trend ठीक-ठाक है), RSI 59.1 healthy। Volume सामान्य है।",
+      "watch_hi": "₹1,821 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,920 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹1,963 पर आधा profit book करें, बाकी T2 ₹2,024 के लिए रखें। SL ₹1,821 trailing करते रहें।"
     },
     {
       "symbol": "ADANIGREEN",
@@ -214,16 +259,16 @@
       "rating": "BUY",
       "setup": "Bullish Pullback to EMA20",
       "score": 62,
-      "cmp": 1539,
-      "entry": 1539,
-      "sl": 1464,
-      "t1": 1640,
-      "t2": 1716,
+      "cmp": 1542,
+      "entry": 1542,
+      "sl": 1466,
+      "t1": 1643,
+      "t2": 1720,
       "rr": 1.33,
-      "rsi": 53.9,
+      "rsi": 54.3,
       "adx": 27.5,
-      "vol": 0.23,
-      "pe": 157.2,
+      "vol": 0.44,
+      "pe": 157.5,
       "roe": 8,
       "mcap": "2.5L Cr",
       "support": [
@@ -246,11 +291,55 @@
         1543.7,
         1513.9,
         1530.0,
-        1539.3
+        1542.0
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 27.5 (trend ठीक-ठाक है), RSI 53.9 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,464 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,545 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,640 पर आधा profit book करें, बाकी T2 ₹1,716 के लिए रखें। SL ₹1,464 trailing करते रहें।"
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 27.5 (trend ठीक-ठाक है), RSI 54.3 healthy। Volume सामान्य है।",
+      "watch_hi": "₹1,466 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,545 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹1,643 पर आधा profit book करें, बाकी T2 ₹1,720 के लिए रखें। SL ₹1,466 trailing करते रहें।"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "sector": "Cement",
+      "direction": "LONG",
+      "rating": "BUY",
+      "setup": "Bullish Breakout (Volume)",
+      "score": 60,
+      "cmp": 12053,
+      "entry": 12053,
+      "sl": 11728,
+      "t1": 12486,
+      "t2": 12811,
+      "rr": 1.33,
+      "rsi": 63.9,
+      "adx": 11.6,
+      "vol": 2.38,
+      "pe": 42.7,
+      "roe": 11,
+      "mcap": "3.5L Cr",
+      "support": [
+        11288,
+        11219
+      ],
+      "resistance": [
+        12275
+      ],
+      "spark": [
+        11661.0,
+        11649.0,
+        11353.0,
+        11524.0,
+        11711.0,
+        11571.0,
+        11496.0,
+        11812.0,
+        11771.0,
+        11727.0,
+        11903.0,
+        12053.0
+      ],
+      "why_hi": "20-दिन high के ऊपर breakout हुआ है। ADX 11.6 (trend अभी कमज़ोर है), RSI 63.9। Volume average से 2.38× ज़्यादा — खरीदारों का दम। यानी असली खरीदारी, fake नहीं।",
+      "watch_hi": "₹11,728 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹12,275 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹12,486 पर आधा profit book करें, बाकी T2 ₹12,811 के लिए रखें। SL ₹11,728 trailing करते रहें।"
     }
   ]
 }
