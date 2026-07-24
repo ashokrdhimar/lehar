@@ -1,5 +1,5 @@
 {
-  "updated_at": "24 Jul 2026, 3:49 PM",
+  "updated_at": "24 Jul 2026, 5:31 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -90,7 +90,7 @@
       "rsi": 57.8,
       "adx": 22.6,
       "vol": 1.0,
-      "pe": 75.6,
+      "pe": 75.4,
       "roe": 14,
       "mcap": "1.9L Cr",
       "support": [
@@ -135,7 +135,7 @@
       "rsi": 44.2,
       "adx": 24.4,
       "vol": 1.0,
-      "pe": 70.0,
+      "pe": 69.7,
       "roe": 7,
       "mcap": "1.1L Cr",
       "support": [
@@ -181,7 +181,7 @@
       "vol": 0.58,
       "pe": 44.5,
       "roe": 19,
-      "mcap": "1.2L Cr",
+      "mcap": "—",
       "support": [
         39505,
         34825
@@ -266,7 +266,7 @@
       "rsi": 67.5,
       "adx": 23.4,
       "vol": 0.78,
-      "pe": 19.7,
+      "pe": 19.8,
       "roe": 24,
       "mcap": "3.4L Cr",
       "support": [
