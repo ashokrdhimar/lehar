@@ -1,5 +1,5 @@
 {
-  "updated_at": "28 Jul 2026, 4:13 PM",
+  "updated_at": "28 Jul 2026, 5:56 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -67,11 +67,11 @@
     "index": "Nifty 50",
     "verdict": "FAVORABLE",
     "regime": "Range",
-    "adx": 11.2,
-    "reason_hi": "Range-bound market (ADX 11.2), low volatility. Good environment for selling.",
+    "adx": 10.4,
+    "reason_hi": "Range-bound market (ADX 10.4), low volatility. Good environment for selling.",
     "ce_strike": 24600,
-    "pe_strike": 23350,
-    "expected": "23,389 – 24,582"
+    "pe_strike": 23400,
+    "expected": "23,412 – 24,559"
   },
   "setups": [
     {
@@ -133,8 +133,8 @@
       "rr": 1.33,
       "rsi": 24.9,
       "adx": 31.3,
-      "vol": 6.2,
-      "pe": 44.9,
+      "vol": 6.21,
+      "pe": 45.6,
       "roe": "—",
       "mcap": "1.5L Cr",
       "support": [
@@ -158,7 +158,7 @@
         464.5,
         430.0
       ],
-      "why_hi": "Bearish Breakdown (Volume) — बिकवाली का दबाव दिख रहा है। ADX 31.3 (trend दमदार है नीचे की तरफ़), RSI 24.9 कमज़ोरी दिखा रहा है। Volume average से 6.2× ज़्यादा — खरीदारों का दम।",
+      "why_hi": "Bearish Breakdown (Volume) — बिकवाली का दबाव दिख रहा है। ADX 31.3 (trend दमदार है नीचे की तरफ़), RSI 24.9 कमज़ोरी दिखा रहा है। Volume average से 6.21× ज़्यादा — खरीदारों का दम।",
       "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹450 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
@@ -310,7 +310,7 @@
       "rr": 1.33,
       "rsi": 46.7,
       "adx": 11.5,
-      "vol": 2.5,
+      "vol": 2.51,
       "pe": 22.4,
       "roe": 8,
       "mcap": "1.1L Cr",
@@ -336,7 +336,7 @@
         430.95,
         426.0
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 11.5 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 46.7 कमज़ोरी दिखा रहा है। Volume average से 2.5× ज़्यादा — खरीदारों का दम।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 11.5 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 46.7 कमज़ोरी दिखा रहा है। Volume average से 2.51× ज़्यादा — खरीदारों का दम।",
       "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹442 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
@@ -445,7 +445,7 @@
       "rsi": 59.0,
       "adx": 15.8,
       "vol": 1.54,
-      "pe": 60.7,
+      "pe": 60.8,
       "roe": 21,
       "mcap": "2.6L Cr",
       "support": [
