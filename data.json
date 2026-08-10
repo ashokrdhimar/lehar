@@ -1,5 +1,5 @@
 {
-  "updated_at": "10 Aug 2026, 3:32 PM",
+  "updated_at": "10 Aug 2026, 4:51 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -13,14 +13,14 @@
       "pct": -0.1
     },
     "SENSEX": {
-      "price": 78454.7,
-      "change": -44.47,
-      "pct": -0.06
+      "price": 78542.44,
+      "change": 43.27,
+      "pct": 0.06
     },
     "INDIA VIX": {
-      "price": 12.23,
-      "change": 0.07,
-      "pct": 0.53
+      "price": 12.24,
+      "change": 0.09,
+      "pct": 0.7
     }
   },
   "breadth": {
