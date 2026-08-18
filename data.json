@@ -1,33 +1,33 @@
 {
-  "updated_at": "18 Aug 2026, 11:17 AM",
+  "updated_at": "18 Aug 2026, 12:12 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
-      "price": 24201.35,
-      "change": -164.65,
-      "pct": -0.68
+      "price": 24214.95,
+      "change": -151.05,
+      "pct": -0.62
     },
     "BANK NIFTY": {
-      "price": 57289.2,
-      "change": -201.9,
-      "pct": -0.35
+      "price": 57364.05,
+      "change": -127.05,
+      "pct": -0.22
     },
     "SENSEX": {
-      "price": 77345.86,
-      "change": -663.39,
-      "pct": -0.85
+      "price": 77363.23,
+      "change": -646.02,
+      "pct": -0.83
     },
     "INDIA VIX": {
-      "price": 11.64,
-      "change": 0.33,
-      "pct": 2.94
+      "price": 11.63,
+      "change": 0.32,
+      "pct": 2.83
     }
   },
   "breadth": {
-    "bullish": 47,
-    "neutral": 17,
+    "bullish": 50,
+    "neutral": 14,
     "bearish": 33,
-    "summary_hi": "बाज़ार आज <b>मिला-जुला (neutral)</b> है — 97 में से 47 stocks में खरीदारी का रुझान। साफ़ दिशा नहीं — चुनिंदा strong setups पर ही दांव लगाएँ।"
+    "summary_hi": "बाज़ार आज <b>मिला-जुला (neutral)</b> है — 97 में से 50 stocks में खरीदारी का रुझान। साफ़ दिशा नहीं — चुनिंदा strong setups पर ही दांव लगाएँ।"
   },
   "sectors": [
     {
@@ -47,6 +47,10 @@
       "strength": "strong"
     },
     {
+      "name": "Pharma",
+      "strength": "strong"
+    },
+    {
       "name": "Finance",
       "strength": "neutral"
     },
@@ -57,21 +61,17 @@
     {
       "name": "Paints",
       "strength": "neutral"
-    },
-    {
-      "name": "Defence",
-      "strength": "neutral"
     }
   ],
   "regime": {
     "index": "Nifty 50",
     "verdict": "FAVORABLE",
     "regime": "Range",
-    "adx": 11.9,
-    "reason_hi": "Range-bound market (ADX 11.9), low volatility. Good environment for selling.",
+    "adx": 12.0,
+    "reason_hi": "Range-bound market (ADX 12.0), low volatility. Good environment for selling.",
     "ce_strike": 24750,
-    "pe_strike": 23650,
-    "expected": "23,696 – 24,707"
+    "pe_strike": 23700,
+    "expected": "23,707 – 24,723"
   },
   "setups": [
     {
@@ -83,16 +83,16 @@
       "score": 70,
       "cmp": 1187,
       "entry": 1187,
-      "sl": 1225,
-      "t1": 1137,
-      "t2": 1100,
+      "sl": 1224,
+      "t1": 1138,
+      "t2": 1101,
       "rr": 1.33,
-      "rsi": 44.5,
-      "adx": 29.8,
-      "vol": 0.19,
+      "rsi": 45.3,
+      "adx": 30.3,
+      "vol": 0.21,
       "pe": 30.1,
       "roe": 9,
-      "mcap": "98,910 Cr",
+      "mcap": "98,860 Cr",
       "support": [
         1101
       ],
@@ -111,10 +111,10 @@
         1206.0,
         1200.0,
         1192.0,
-        1187.2
+        1186.8
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 29.8 (trend दमदार है नीचे की तरफ़), RSI 44.5 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,225 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 30.3 (trend दमदार है नीचे की तरफ़), RSI 45.3 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,224 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
@@ -124,16 +124,16 @@
       "rating": "BUY",
       "setup": "Bullish Pullback to EMA20",
       "score": 70,
-      "cmp": 1235,
-      "entry": 1235,
-      "sl": 1174,
-      "t1": 1318,
-      "t2": 1379,
+      "cmp": 1240,
+      "entry": 1240,
+      "sl": 1178,
+      "t1": 1322,
+      "t2": 1384,
       "rr": 1.33,
-      "rsi": 58.4,
+      "rsi": 59.4,
       "adx": 34.7,
-      "vol": 0.21,
-      "pe": 29.7,
+      "vol": 0.41,
+      "pe": 29.9,
       "roe": "—",
       "mcap": "1.2L Cr",
       "support": [
@@ -155,11 +155,55 @@
         1232.3,
         1243.9,
         1254.0,
-        1235.4
+        1239.7
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 34.7 (trend दमदार है), RSI 58.4 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,174 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,345 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,318 पर आधा profit book करें, बाकी T2 ₹1,379 के लिए रखें। SL ₹1,174 trailing करते रहें।"
+      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 34.7 (trend दमदार है), RSI 59.4 healthy। Volume सामान्य है।",
+      "watch_hi": "₹1,178 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,345 resistance है, वहाँ रुक सकता है।",
+      "exit_hi": "T1 ₹1,322 पर आधा profit book करें, बाकी T2 ₹1,384 के लिए रखें। SL ₹1,178 trailing करते रहें।"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "sector": "FMCG",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 62,
+      "cmp": 2041,
+      "entry": 2041,
+      "sl": 2097,
+      "t1": 1968,
+      "t2": 1912,
+      "rr": 1.33,
+      "rsi": 39.9,
+      "adx": 23.9,
+      "vol": 0.27,
+      "pe": 45.8,
+      "roe": "—",
+      "mcap": "4.8L Cr",
+      "support": [
+        2016
+      ],
+      "resistance": [
+        2213,
+        2225
+      ],
+      "spark": [
+        2138.0,
+        2096.5,
+        2085.3,
+        2079.5,
+        2096.0,
+        2087.2,
+        2064.9,
+        2063.0,
+        2092.0,
+        2077.0,
+        2055.0,
+        2041.4
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 23.9 (trend ठीक-ठाक है नीचे की तरफ़), RSI 39.9 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹2,097 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
       "symbol": "WIPRO",
@@ -174,9 +218,9 @@
       "t1": 172,
       "t2": 167,
       "rr": 1.33,
-      "rsi": 43.6,
+      "rsi": 43.9,
       "adx": 19.0,
-      "vol": 0.23,
+      "vol": 0.3,
       "pe": 14.4,
       "roe": 16,
       "mcap": "1.8L Cr",
@@ -200,55 +244,10 @@
         183.1,
         184.0,
         181.9,
-        179.31
+        179.49
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 19.0 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 43.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 19.0 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 43.9 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
       "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹185 (इसके ऊपर गया तो निकलें)।",
-      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
-    },
-    {
-      "symbol": "TATACONSUM",
-      "sector": "FMCG",
-      "direction": "SHORT",
-      "rating": "SHORT_SETUP",
-      "setup": "Bearish Pullback to EMA20",
-      "score": 57,
-      "cmp": 1073,
-      "entry": 1073,
-      "sl": 1107,
-      "t1": 1029,
-      "t2": 995,
-      "rr": 1.33,
-      "rsi": 45.0,
-      "adx": 20.8,
-      "vol": 0.1,
-      "pe": 65.4,
-      "roe": "—",
-      "mcap": "1.1L Cr",
-      "support": [
-        1071,
-        1065
-      ],
-      "resistance": [
-        1123,
-        1130
-      ],
-      "spark": [
-        1110.0,
-        1092.0,
-        1096.3,
-        1090.0,
-        1082.3,
-        1108.7,
-        1078.0,
-        1061.9,
-        1090.5,
-        1079.5,
-        1072.6,
-        1073.3
-      ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 20.8 (trend ठीक-ठाक है नीचे की तरफ़), RSI 45.0 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,107 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     }
   ]
