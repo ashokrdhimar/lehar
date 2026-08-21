@@ -1,5 +1,5 @@
 {
-  "updated_at": "21 Aug 2026, 3:41 PM",
+  "updated_at": "21 Aug 2026, 4:19 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -13,14 +13,14 @@
       "pct": 0.46
     },
     "SENSEX": {
-      "price": 77453.8,
-      "change": -83.92,
-      "pct": -0.11
+      "price": 77540.83,
+      "change": 3.11,
+      "pct": 0.0
     },
     "INDIA VIX": {
-      "price": 11.16,
-      "change": 0.4,
-      "pct": 3.76
+      "price": 11.19,
+      "change": 0.43,
+      "pct": 4.04
     }
   },
   "breadth": {
@@ -134,7 +134,7 @@
       "rsi": 62.1,
       "adx": 26.8,
       "vol": 1.59,
-      "pe": 19.4,
+      "pe": 19.8,
       "roe": "—",
       "mcap": "4.0L Cr",
       "support": [
