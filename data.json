@@ -1,5 +1,5 @@
 {
-  "updated_at": "21 Aug 2026, 4:19 PM",
+  "updated_at": "24 Aug 2026, 8:33 AM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -18,9 +18,9 @@
       "pct": 0.0
     },
     "INDIA VIX": {
-      "price": 11.19,
-      "change": 0.43,
-      "pct": 4.04
+      "price": 11.2,
+      "change": 0.44,
+      "pct": 4.09
     }
   },
   "breadth": {
@@ -356,7 +356,7 @@
       "rsi": 51.7,
       "adx": 22.5,
       "vol": 0.45,
-      "pe": 40.2,
+      "pe": 40.7,
       "roe": 20,
       "mcap": "12.1L Cr",
       "support": [
