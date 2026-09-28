@@ -1,41 +1,41 @@
 {
-  "updated_at": "25 Sep 2026, 6:18 PM",
+  "updated_at": "28 Sep 2026, 1:50 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
-      "price": 23140.5,
-      "change": 77.4,
-      "pct": 0.34
+      "price": 22836.95,
+      "change": -303.55,
+      "pct": -1.31
     },
     "BANK NIFTY": {
-      "price": 55580.4,
-      "change": 141.9,
-      "pct": 0.26
+      "price": 54566.7,
+      "change": -1013.7,
+      "pct": -1.82
     },
     "SENSEX": {
-      "price": 73895.74,
-      "change": 315.2,
-      "pct": 0.43
+      "price": 72917.27,
+      "change": -978.47,
+      "pct": -1.32
     },
     "INDIA VIX": {
-      "price": 12.16,
-      "change": -0.53,
-      "pct": -4.18
+      "price": 13.68,
+      "change": 1.52,
+      "pct": 12.52
     }
   },
   "breadth": {
-    "bullish": 17,
-    "neutral": 11,
-    "bearish": 69,
-    "summary_hi": "बाज़ार आज <b>कमज़ोरी (bearish)</b> की तरफ़ है — 97 में से 17 stocks में खरीदारी का रुझान। सावधानी रखें — long trades में जल्दबाज़ी न करें, SL सख़्त रखें।"
+    "bullish": 9,
+    "neutral": 15,
+    "bearish": 73,
+    "summary_hi": "बाज़ार आज <b>कमज़ोरी (bearish)</b> की तरफ़ है — 97 में से 9 stocks में खरीदारी का रुझान। सावधानी रखें — long trades में जल्दबाज़ी न करें, SL सख़्त रखें।"
   },
   "sectors": [
     {
-      "name": "Realty",
-      "strength": "strong"
+      "name": "Internet",
+      "strength": "neutral"
     },
     {
-      "name": "Defence",
+      "name": "Realty",
       "strength": "neutral"
     },
     {
@@ -43,23 +43,23 @@
       "strength": "neutral"
     },
     {
-      "name": "Internet",
-      "strength": "neutral"
-    },
-    {
       "name": "Auto",
-      "strength": "neutral"
-    },
-    {
-      "name": "Consumer",
-      "strength": "neutral"
-    },
-    {
-      "name": "Capital Goods",
-      "strength": "neutral"
+      "strength": "weak"
     },
     {
       "name": "Metal",
+      "strength": "weak"
+    },
+    {
+      "name": "Paints",
+      "strength": "weak"
+    },
+    {
+      "name": "Banking",
+      "strength": "weak"
+    },
+    {
+      "name": "Finance",
       "strength": "weak"
     }
   ],
@@ -67,143 +67,56 @@
     "index": "Nifty 50",
     "verdict": "AVOID",
     "regime": "Strong Trend Down",
-    "adx": 31.9,
-    "reason_hi": "Strong trend (ADX 31.9). Avoid selling on the trend side - high gap/breakout risk.",
-    "ce_strike": 23700,
-    "pe_strike": 22350,
-    "expected": "22,623 – 23,658"
+    "adx": 33.4,
+    "reason_hi": "Strong trend (ADX 33.4). Avoid selling on the trend side - high gap/breakout risk.",
+    "ce_strike": 23400,
+    "pe_strike": 22000,
+    "expected": "22,294 – 23,380"
   },
   "setups": [
     {
-      "symbol": "JINDALSTEL",
-      "sector": "Metal",
+      "symbol": "DRREDDY",
+      "sector": "Pharma",
       "direction": "LONG",
       "rating": "BUY",
-      "setup": "Bullish Pullback to EMA20",
-      "score": 72,
-      "cmp": 1165,
-      "entry": 1165,
-      "sl": 1122,
-      "t1": 1222,
-      "t2": 1266,
-      "rr": 1.33,
-      "rsi": 57.7,
-      "adx": 23.2,
-      "vol": 0.63,
-      "pe": 43.5,
-      "roe": "—",
-      "mcap": "1.2L Cr",
-      "support": [
-        1086,
-        1058
-      ],
-      "resistance": [
-        1196
-      ],
-      "spark": [
-        1137.0,
-        1120.5,
-        1120.5,
-        1095.0,
-        1103.0,
-        1128.4,
-        1119.5,
-        1130.6,
-        1141.0,
-        1175.3,
-        1157.8,
-        1164.8
-      ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 23.2 (trend ठीक-ठाक है), RSI 57.7 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,122 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,196 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,222 पर आधा profit book करें, बाकी T2 ₹1,266 के लिए रखें। SL ₹1,122 trailing करते रहें।"
-    },
-    {
-      "symbol": "KOTAKBANK",
-      "sector": "Banking",
-      "direction": "SHORT",
-      "rating": "SHORT_SETUP",
-      "setup": "Bearish Breakdown (Volume)",
+      "setup": "Bullish Breakout (Volume)",
       "score": 70,
-      "cmp": 404,
-      "entry": 404,
-      "sl": 414,
-      "t1": 390,
-      "t2": 380,
+      "cmp": 1224,
+      "entry": 1224,
+      "sl": 1191,
+      "t1": 1269,
+      "t2": 1302,
       "rr": 1.33,
-      "rsi": 42.5,
-      "adx": 27.2,
-      "vol": 1.73,
-      "pe": 20.2,
-      "roe": "—",
-      "mcap": "4.0L Cr",
+      "rsi": 64.4,
+      "adx": 23.7,
+      "vol": 1.86,
+      "pe": 30.8,
+      "roe": 9,
+      "mcap": "1.0L Cr",
       "support": [
-        387,
-        386
+        1168,
+        1130
       ],
       "resistance": [
-        429
+        1269
       ],
       "spark": [
-        416.55,
-        419.0,
-        419.0,
-        409.8,
-        415.0,
-        416.5,
-        412.5,
-        414.8,
-        412.65,
-        413.25,
-        405.0,
-        404.0
+        1165.5,
+        1165.5,
+        1145.0,
+        1140.0,
+        1175.0,
+        1185.0,
+        1198.3,
+        1211.0,
+        1211.2,
+        1200.4,
+        1201.0,
+        1224.5
       ],
-      "why_hi": "Bearish Breakdown (Volume) — बिकवाली का दबाव दिख रहा है। ADX 27.2 (trend ठीक-ठाक है नीचे की तरफ़), RSI 42.5 कमज़ोरी दिखा रहा है। Volume average से 1.73× ज़्यादा — खरीदारों का दम।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹414 (इसके ऊपर गया तो निकलें)।",
-      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
-    },
-    {
-      "symbol": "TRENT",
-      "sector": "Consumer",
-      "direction": "SHORT",
-      "rating": "SHORT_SETUP",
-      "setup": "Bearish Breakdown (Volume)",
-      "score": 70,
-      "cmp": 2669,
-      "entry": 2669,
-      "sl": 2756,
-      "t1": 2553,
-      "t2": 2466,
-      "rr": 1.33,
-      "rsi": 29.7,
-      "adx": 32.2,
-      "vol": 1.59,
-      "pe": 78.5,
-      "roe": "—",
-      "mcap": "1.4L Cr",
-      "support": [
-        2756
-      ],
-      "resistance": [
-        3244
-      ],
-      "spark": [
-        2818.7,
-        2802.4,
-        2802.4,
-        2730.0,
-        2769.7,
-        2789.0,
-        2824.0,
-        2815.5,
-        2782.9,
-        2774.0,
-        2700.0,
-        2669.3
-      ],
-      "why_hi": "Bearish Breakdown (Volume) — बिकवाली का दबाव दिख रहा है। ADX 32.2 (trend दमदार है नीचे की तरफ़), RSI 29.7 कमज़ोरी दिखा रहा है। Volume average से 1.59× ज़्यादा — खरीदारों का दम।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹2,756 (इसके ऊपर गया तो निकलें)।",
-      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+      "why_hi": "20-दिन high के ऊपर breakout हुआ है। ADX 23.7 (trend ठीक-ठाक है), RSI 64.4। Volume average से 1.86× ज़्यादा — खरीदारों का दम। यानी असली खरीदारी, fake नहीं।",
+      "watch_hi": "₹1,191 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें।",
+      "exit_hi": "T1 ₹1,269 पर आधा profit book करें, बाकी T2 ₹1,302 के लिए रखें। SL ₹1,191 trailing करते रहें।"
     },
     {
       "symbol": "DABUR",
@@ -214,13 +127,13 @@
       "score": 70,
       "cmp": 386,
       "entry": 386,
-      "sl": 396,
-      "t1": 372,
-      "t2": 362,
+      "sl": 395,
+      "t1": 373,
+      "t2": 363,
       "rr": 1.33,
       "rsi": 46.3,
-      "adx": 34.1,
-      "vol": 0.33,
+      "adx": 32.2,
+      "vol": 0.72,
       "pe": 34.7,
       "roe": "—",
       "mcap": "68,404 Cr",
@@ -231,7 +144,6 @@
         438
       ],
       "spark": [
-        376.45,
         376.0,
         376.0,
         384.9,
@@ -242,55 +154,55 @@
         388.1,
         387.4,
         385.7,
+        385.6,
         385.6
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 34.1 (trend दमदार है नीचे की तरफ़), RSI 46.3 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹396 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 32.2 (trend दमदार है नीचे की तरफ़), RSI 46.3 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹395 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
-      "symbol": "IOC",
-      "sector": "Energy",
+      "symbol": "INDIGO",
+      "sector": "Aviation",
       "direction": "SHORT",
       "rating": "SHORT_SETUP",
       "setup": "Bearish Pullback to EMA20",
       "score": 70,
-      "cmp": 136,
-      "entry": 136,
-      "sl": 139,
-      "t1": 131,
-      "t2": 128,
+      "cmp": 4884,
+      "entry": 4884,
+      "sl": 5043,
+      "t1": 4671,
+      "t2": 4512,
       "rr": 1.33,
-      "rsi": 46.6,
-      "adx": 22.7,
-      "vol": 1.02,
-      "pe": 5.6,
+      "rsi": 42.5,
+      "adx": 31.2,
+      "vol": 0.53,
+      "pe": "—",
       "roe": "—",
-      "mcap": "—",
+      "mcap": "1.9L Cr",
       "support": [
-        135,
-        134
+        4702
       ],
       "resistance": [
-        141,
-        144
+        5280,
+        5325
       ],
       "spark": [
-        134.94,
-        135.11,
-        135.11,
-        132.03,
-        134.75,
-        134.27,
-        137.0,
-        136.53,
-        137.8,
-        138.15,
-        136.27,
-        135.7
+        4973.0,
+        4973.0,
+        4776.0,
+        4733.5,
+        4845.0,
+        4920.0,
+        4941.0,
+        5030.0,
+        5028.5,
+        4890.0,
+        4940.0,
+        4883.5
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 22.7 (trend ठीक-ठाक है नीचे की तरफ़), RSI 46.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹139 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 31.2 (trend दमदार है नीचे की तरफ़), RSI 42.5 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹5,043 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
@@ -300,16 +212,16 @@
       "rating": "SHORT_SETUP",
       "setup": "Bearish Pullback to EMA20",
       "score": 70,
-      "cmp": 819,
-      "entry": 819,
-      "sl": 842,
-      "t1": 789,
-      "t2": 766,
+      "cmp": 811,
+      "entry": 811,
+      "sl": 834,
+      "t1": 781,
+      "t2": 758,
       "rr": 1.33,
-      "rsi": 47.6,
-      "adx": 32.8,
-      "vol": 0.27,
-      "pe": 56.4,
+      "rsi": 44.6,
+      "adx": 33.2,
+      "vol": 0.36,
+      "pe": 55.7,
       "roe": "—",
       "mcap": "1.1L Cr",
       "support": [
@@ -320,7 +232,6 @@
         889
       ],
       "spark": [
-        803.0,
         802.1,
         802.1,
         791.25,
@@ -331,189 +242,277 @@
         830.0,
         832.3,
         824.55,
-        819.0
+        819.0,
+        811.45
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 32.8 (trend दमदार है नीचे की तरफ़), RSI 47.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹842 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 33.2 (trend दमदार है नीचे की तरफ़), RSI 44.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹834 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
-      "symbol": "LODHA",
-      "sector": "Realty",
-      "direction": "LONG",
-      "rating": "BUY",
-      "setup": "Bullish Pullback to EMA20",
+      "symbol": "NMDC",
+      "sector": "Metal",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Breakdown (Volume)",
       "score": 67,
-      "cmp": 1165,
-      "entry": 1165,
-      "sl": 1109,
-      "t1": 1240,
-      "t2": 1296,
+      "cmp": 78,
+      "entry": 78,
+      "sl": 81,
+      "t1": 75,
+      "t2": 72,
       "rr": 1.33,
-      "rsi": 49.6,
-      "adx": 23.7,
-      "vol": 0.51,
-      "pe": 28.3,
+      "rsi": 35.3,
+      "adx": 20.8,
+      "vol": 1.61,
+      "pe": 9.2,
       "roe": "—",
-      "mcap": "1.2L Cr",
+      "mcap": "68,831 Cr",
       "support": [
-        1124,
-        1048
+        81
       ],
       "resistance": [
-        1307,
-        1345
+        86,
+        87
       ],
       "spark": [
-        1163.4,
-        1116.9,
-        1116.9,
-        1064.8,
-        1087.4,
-        1103.1,
-        1144.7,
-        1138.0,
-        1144.0,
-        1162.5,
-        1158.0,
-        1165.0
+        82.4,
+        82.4,
+        80.5,
+        80.32,
+        80.8,
+        79.15,
+        79.8,
+        80.2,
+        82.0,
+        80.82,
+        79.9,
+        78.29
       ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 23.7 (trend ठीक-ठाक है), RSI 49.6 healthy। Volume सामान्य है।",
-      "watch_hi": "₹1,109 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹1,307 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹1,240 पर आधा profit book करें, बाकी T2 ₹1,296 के लिए रखें। SL ₹1,109 trailing करते रहें।"
+      "why_hi": "Bearish Breakdown (Volume) — बिकवाली का दबाव दिख रहा है। ADX 20.8 (trend ठीक-ठाक है नीचे की तरफ़), RSI 35.3 कमज़ोरी दिखा रहा है। Volume average से 1.61× ज़्यादा — खरीदारों का दम।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹81 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
-      "symbol": "BOSCHLTD",
-      "sector": "Auto",
-      "direction": "LONG",
-      "rating": "BUY",
-      "setup": "Bullish Pullback to EMA20",
-      "score": 62,
-      "cmp": 48250,
-      "entry": 48250,
-      "sl": 46664,
-      "t1": 50364,
-      "t2": 51950,
-      "rr": 1.33,
-      "rsi": 55.8,
-      "adx": 22.8,
-      "vol": 0.65,
-      "pe": 60.2,
-      "roe": "—",
-      "mcap": "—",
-      "support": [
-        46850,
-        46410
-      ],
-      "resistance": [
-        49100,
-        50000
-      ],
-      "spark": [
-        49100.0,
-        48775.0,
-        48385.0,
-        47070.0,
-        47555.0,
-        47735.0,
-        47000.0,
-        47565.0,
-        48290.0,
-        47955.0,
-        47750.0,
-        48250.0
-      ],
-      "why_hi": "Stock uptrend में है और support के पास pullback आया है — सस्ते में खरीदने का मौका। ADX 22.8 (trend ठीक-ठाक है), RSI 55.8 healthy। Volume सामान्य है।",
-      "watch_hi": "₹46,664 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें। ₹49,100 resistance है, वहाँ रुक सकता है।",
-      "exit_hi": "T1 ₹50,364 पर आधा profit book करें, बाकी T2 ₹51,950 के लिए रखें। SL ₹46,664 trailing करते रहें।"
-    },
-    {
-      "symbol": "BPCL",
-      "sector": "Energy",
+      "symbol": "AXISBANK",
+      "sector": "Banking",
       "direction": "SHORT",
       "rating": "SHORT_SETUP",
       "setup": "Bearish Pullback to EMA20",
       "score": 62,
-      "cmp": 308,
-      "entry": 308,
-      "sl": 318,
-      "t1": 295,
-      "t2": 285,
+      "cmp": 1210,
+      "entry": 1210,
+      "sl": 1247,
+      "t1": 1162,
+      "t2": 1125,
       "rr": 1.33,
-      "rsi": 47.0,
-      "adx": 24.4,
-      "vol": 0.42,
-      "pe": 7.7,
-      "roe": "—",
-      "mcap": "1.3L Cr",
+      "rsi": 42.1,
+      "adx": 24.9,
+      "vol": 0.72,
+      "pe": 13.6,
+      "roe": 13,
+      "mcap": "3.8L Cr",
       "support": [
-        305,
-        305
+        1209
       ],
       "resistance": [
-        322,
-        326
+        1258,
+        1272
       ],
       "spark": [
-        303.0,
-        304.5,
-        304.5,
-        298.65,
-        303.35,
-        307.0,
-        314.0,
-        312.75,
-        313.6,
-        315.75,
-        307.1,
-        308.5
+        1246.0,
+        1246.0,
+        1222.9,
+        1241.0,
+        1240.0,
+        1257.0,
+        1250.0,
+        1242.7,
+        1243.2,
+        1186.5,
+        1222.4,
+        1210.4
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 24.4 (trend ठीक-ठाक है नीचे की तरफ़), RSI 47.0 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹318 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 24.9 (trend ठीक-ठाक है नीचे की तरफ़), RSI 42.1 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,247 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
-      "symbol": "SBILIFE",
+      "symbol": "CIPLA",
+      "sector": "Pharma",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 62,
+      "cmp": 1390,
+      "entry": 1390,
+      "sl": 1427,
+      "t1": 1341,
+      "t2": 1305,
+      "rr": 1.33,
+      "rsi": 47.9,
+      "adx": 23.6,
+      "vol": 0.54,
+      "pe": 33.3,
+      "roe": "—",
+      "mcap": "1.1L Cr",
+      "support": [
+        1366,
+        1344
+      ],
+      "resistance": [
+        1467,
+        1488
+      ],
+      "spark": [
+        1366.0,
+        1366.0,
+        1351.0,
+        1358.0,
+        1376.3,
+        1394.5,
+        1386.1,
+        1384.1,
+        1383.0,
+        1399.0,
+        1399.7,
+        1390.1
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 23.6 (trend ठीक-ठाक है नीचे की तरफ़), RSI 47.9 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,427 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+    },
+    {
+      "symbol": "HDFCLIFE",
       "sector": "Insurance",
       "direction": "SHORT",
       "rating": "SHORT_SETUP",
       "setup": "Bearish Pullback to EMA20",
-      "score": 58,
-      "cmp": 1742,
-      "entry": 1742,
-      "sl": 1801,
-      "t1": 1664,
-      "t2": 1605,
+      "score": 62,
+      "cmp": 528,
+      "entry": 528,
+      "sl": 550,
+      "t1": 498,
+      "t2": 475,
       "rr": 1.33,
-      "rsi": 49.1,
-      "adx": 24.1,
-      "vol": 1.07,
-      "pe": 67.1,
-      "roe": 14,
-      "mcap": "1.7L Cr",
+      "rsi": 44.3,
+      "adx": 19.3,
+      "vol": 0.37,
+      "pe": 57.8,
+      "roe": 11,
+      "mcap": "1.1L Cr",
       "support": [
-        1653
+        509
       ],
       "resistance": [
-        1775,
-        1802
+        562,
+        564
       ],
       "spark": [
-        1700.6,
-        1684.7,
-        1684.7,
-        1654.1,
-        1697.9,
-        1766.9,
-        1731.0,
-        1756.0,
-        1756.3,
-        1760.0,
-        1755.0,
-        1742.0
+        530.0,
+        530.0,
+        516.1,
+        530.2,
+        557.0,
+        550.95,
+        559.4,
+        559.2,
+        561.5,
+        526.9,
+        531.0,
+        527.9
       ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 24.1 (trend ठीक-ठाक है नीचे की तरफ़), RSI 49.1 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,801 (इसके ऊपर गया तो निकलें)।",
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 19.3 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 44.3 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹550 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "sector": "Metal",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 62,
+      "cmp": 1260,
+      "entry": 1260,
+      "sl": 1296,
+      "t1": 1213,
+      "t2": 1177,
+      "rr": 1.33,
+      "rsi": 44.6,
+      "adx": 18.3,
+      "vol": 0.66,
+      "pe": 12.4,
+      "roe": "—",
+      "mcap": "3.1L Cr",
+      "support": [
+        1250,
+        1227
+      ],
+      "resistance": [
+        1279,
+        1335
+      ],
+      "spark": [
+        1265.0,
+        1265.0,
+        1229.2,
+        1248.9,
+        1253.4,
+        1275.6,
+        1268.6,
+        1267.0,
+        1297.8,
+        1273.2,
+        1277.0,
+        1260.5
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 18.3 (trend अभी कमज़ोर है नीचे की तरफ़), RSI 44.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,296 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "sector": "Cement",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 62,
+      "cmp": 11030,
+      "entry": 11030,
+      "sl": 11306,
+      "t1": 10662,
+      "t2": 10386,
+      "rr": 1.33,
+      "rsi": 44.7,
+      "adx": 25.8,
+      "vol": 0.75,
+      "pe": 38.0,
+      "roe": "—",
+      "mcap": "3.2L Cr",
+      "support": [
+        10639
+      ],
+      "resistance": [
+        11820,
+        12172
+      ],
+      "spark": [
+        11000.0,
+        11000.0,
+        10697.0,
+        10700.0,
+        10764.0,
+        11014.0,
+        11100.0,
+        11000.0,
+        11155.0,
+        11056.0,
+        11155.0,
+        11030.0
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 25.8 (trend ठीक-ठाक है नीचे की तरफ़), RSI 44.7 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹11,306 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     }
   ]
