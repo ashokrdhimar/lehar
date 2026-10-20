@@ -1,5 +1,5 @@
 {
-  "updated_at": "19 Oct 2026, 8:22 PM",
+  "updated_at": "20 Oct 2026, 12:45 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
@@ -20,7 +20,7 @@
     "INDIA VIX": {
       "price": 14.77,
       "change": 0.71,
-      "pct": 5.07
+      "pct": 5.05
     }
   },
   "breadth": {
@@ -74,6 +74,51 @@
     "expected": "22,162 – 23,616"
   },
   "setups": [
+    {
+      "symbol": "ABB",
+      "sector": "Capital Goods",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 85,
+      "cmp": 6801,
+      "entry": 6801,
+      "sl": 7099,
+      "t1": 6403,
+      "t2": 6105,
+      "rr": 1.33,
+      "rsi": 41.1,
+      "adx": 28.9,
+      "vol": 1.75,
+      "pe": 97.4,
+      "roe": 19,
+      "mcap": "1.5L Cr",
+      "support": [
+        6660,
+        6575
+      ],
+      "resistance": [
+        7140,
+        7406
+      ],
+      "spark": [
+        6776.0,
+        6900.0,
+        6895.0,
+        7122.5,
+        7005.0,
+        6770.0,
+        6780.0,
+        6855.5,
+        6977.5,
+        6999.0,
+        6816.0,
+        6801.0
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 28.9 (trend दमदार है नीचे की तरफ़), RSI 41.1 कमज़ोरी दिखा रहा है। Volume average से 1.75× ज़्यादा — खरीदारों का दम।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹7,099 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+    },
     {
       "symbol": "ULTRACEMCO",
       "sector": "Cement",
@@ -339,50 +384,6 @@
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
-      "symbol": "PIDILITIND",
-      "sector": "Chemicals",
-      "direction": "SHORT",
-      "rating": "SHORT_SETUP",
-      "setup": "Bearish Pullback to EMA20",
-      "score": 70,
-      "cmp": 1483,
-      "entry": 1483,
-      "sl": 1531,
-      "t1": 1418,
-      "t2": 1370,
-      "rr": 1.33,
-      "rsi": 41.1,
-      "adx": 28.6,
-      "vol": 0.62,
-      "pe": 57.1,
-      "roe": "—",
-      "mcap": "1.5L Cr",
-      "support": [
-        1457
-      ],
-      "resistance": [
-        1525,
-        1599
-      ],
-      "spark": [
-        1464.0,
-        1487.7,
-        1520.5,
-        1488.5,
-        1460.1,
-        1482.0,
-        1477.7,
-        1497.6,
-        1499.5,
-        1505.0,
-        1502.8,
-        1482.6
-      ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 28.6 (trend दमदार है नीचे की तरफ़), RSI 41.1 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹1,531 (इसके ऊपर गया तो निकलें)।",
-      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
-    },
-    {
       "symbol": "RECLTD",
       "sector": "Finance",
       "direction": "SHORT",
@@ -423,51 +424,6 @@
       ],
       "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 36.4 (trend दमदार है नीचे की तरफ़), RSI 45.2 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
       "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹313 (इसके ऊपर गया तो निकलें)।",
-      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
-    },
-    {
-      "symbol": "SHREECEM",
-      "sector": "Cement",
-      "direction": "SHORT",
-      "rating": "SHORT_SETUP",
-      "setup": "Bearish Pullback to EMA20",
-      "score": 70,
-      "cmp": 22290,
-      "entry": 22290,
-      "sl": 23088,
-      "t1": 21225,
-      "t2": 20427,
-      "rr": 1.33,
-      "rsi": 46.9,
-      "adx": 27.4,
-      "vol": 1.25,
-      "pe": 49.3,
-      "roe": "—",
-      "mcap": "80,424 Cr",
-      "support": [
-        21665,
-        21355
-      ],
-      "resistance": [
-        23000,
-        25255
-      ],
-      "spark": [
-        21900.0,
-        21990.0,
-        22210.0,
-        21780.0,
-        21600.0,
-        22080.0,
-        21860.0,
-        22225.0,
-        22185.0,
-        22315.0,
-        22460.0,
-        22290.0
-      ],
-      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 27.4 (trend ठीक-ठाक है नीचे की तरफ़), RSI 46.9 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
-      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹23,088 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     },
     {
@@ -512,6 +468,51 @@
       ],
       "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 34.6 (trend दमदार है नीचे की तरफ़), RSI 39.0 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
       "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹875 (इसके ऊपर गया तो निकलें)।",
+      "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
+    },
+    {
+      "symbol": "ITC",
+      "sector": "FMCG",
+      "direction": "SHORT",
+      "rating": "SHORT_SETUP",
+      "setup": "Bearish Pullback to EMA20",
+      "score": 62,
+      "cmp": 261,
+      "entry": 261,
+      "sl": 270,
+      "t1": 249,
+      "t2": 240,
+      "rr": 1.33,
+      "rsi": 46.6,
+      "adx": 23.2,
+      "vol": 0.58,
+      "pe": 16.5,
+      "roe": "—",
+      "mcap": "3.3L Cr",
+      "support": [
+        258,
+        256
+      ],
+      "resistance": [
+        270,
+        271
+      ],
+      "spark": [
+        255.9,
+        268.9,
+        266.7,
+        265.7,
+        255.0,
+        266.0,
+        257.9,
+        261.0,
+        261.5,
+        263.9,
+        263.5,
+        260.8
+      ],
+      "why_hi": "Bearish Pullback to EMA20 — बिकवाली का दबाव दिख रहा है। ADX 23.2 (trend ठीक-ठाक है नीचे की तरफ़), RSI 46.6 कमज़ोरी दिखा रहा है। Volume सामान्य है।",
+      "watch_hi": "यह गिरावट का setup है। short करें तो SL ₹270 (इसके ऊपर गया तो निकलें)।",
       "exit_hi": "short नहीं करते तो इसे खरीदने की गलती न करें — अभी इस stock से दूर रहें।"
     }
   ]
