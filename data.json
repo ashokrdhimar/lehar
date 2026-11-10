@@ -1,26 +1,26 @@
 {
-  "updated_at": "10 Nov 2026, 1:27 AM",
+  "updated_at": "10 Nov 2026, 2:52 PM",
   "is_demo": false,
   "market": {
     "NIFTY 50": {
-      "price": 25030.35,
-      "change": 493.75,
-      "pct": 2.01
+      "price": 25044.65,
+      "change": 14.3,
+      "pct": 0.06
     },
     "BANK NIFTY": {
-      "price": 59086.0,
-      "change": 1312.35,
-      "pct": 2.27
+      "price": 59741.25,
+      "change": 655.25,
+      "pct": 1.11
     },
     "SENSEX": {
-      "price": 81028.02,
-      "change": 1718.02,
-      "pct": 2.17
+      "price": 81106.65,
+      "change": 78.62,
+      "pct": 0.1
     },
     "INDIA VIX": {
-      "price": 17.47,
-      "change": 1.89,
-      "pct": 12.13
+      "price": 17.42,
+      "change": -0.05,
+      "pct": -0.29
     }
   },
   "breadth": {
@@ -67,11 +67,11 @@
     "index": "Nifty 50",
     "verdict": "AVOID",
     "regime": "Strong Trend Up",
-    "adx": 33.5,
-    "reason_hi": "Strong trend (ADX 33.5). Avoid selling on the trend side - high gap/breakout risk.",
+    "adx": 35.1,
+    "reason_hi": "Strong trend (ADX 35.1). Avoid selling on the trend side - high gap/breakout risk.",
     "ce_strike": 26400,
-    "pe_strike": 24100,
-    "expected": "24,122 – 25,939"
+    "pe_strike": 24150,
+    "expected": "24,155 – 25,935"
   },
   "setups": [
     {
@@ -266,7 +266,7 @@
       "rr": 1.33,
       "rsi": 80.9,
       "adx": 33.7,
-      "vol": 1.69,
+      "vol": 1.7,
       "pe": 19.5,
       "roe": 16,
       "mcap": "11.4L Cr",
@@ -291,7 +291,7 @@
         1571.2,
         1589.0
       ],
-      "why_hi": "20-दिन high के ऊपर breakout हुआ है। ADX 33.7 (trend दमदार है), RSI 80.9। Volume average से 1.69× ज़्यादा — खरीदारों का दम। यानी असली खरीदारी, fake नहीं।",
+      "why_hi": "20-दिन high के ऊपर breakout हुआ है। ADX 33.7 (trend दमदार है), RSI 80.9। Volume average से 1.7× ज़्यादा — खरीदारों का दम। यानी असली खरीदारी, fake नहीं।",
       "watch_hi": "₹1,541 (SL) के नीचे बंद हुआ तो setup टूटा — तुरंत निकलें।",
       "exit_hi": "T1 ₹1,653 पर आधा profit book करें, बाकी T2 ₹1,701 के लिए रखें। SL ₹1,541 trailing करते रहें।"
     },
